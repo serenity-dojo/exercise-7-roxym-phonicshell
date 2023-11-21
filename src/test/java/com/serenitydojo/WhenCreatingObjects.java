@@ -19,7 +19,7 @@ public class WhenCreatingObjects {
     public void whenADogBarks() {
         Dog fido = new Dog("Fido","Bone", 5);
 
-        String dogSound = "";
+        String dogSound;
         // TODO: implement a method in the Dog sound called makeNoise() that returns the sound a dog makes: "Woof", e.g.
         dogSound = fido.makeNoise();
 
@@ -43,7 +43,7 @@ public class WhenCreatingObjects {
 
         Pet fido = new Dog("Fido","Bone", 5);
         Pet spot = new Cat("Spot","String", 5);
-        Pet hazel = new Hamster("Hazel", 1, "Wheel");
+        Pet hazel = new Hamster("Hazel", "Whell", 1);
 
         assertThat(fido.play(), equalTo("plays with bone"));
         assertThat(spot.play(), equalTo("plays with string"));
